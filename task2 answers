@@ -1,33 +1,33 @@
 1. Find all the topics and tasks which are thought in the month of October:
 
-db.topics.find({month:"october"});
+db.topics.find({month:"October"});
 
 2. Find all the company drives which appeared between 15-oct-2020 and 31-oct-2020:
 
-db.company_drives.find({date:{$gt:new Date("2020-10-15"),$lt:new Date("2020-10-31")}});
+db.company_drives.find({date:{$gt:new Date("15-07-2024"),$lt:new Date("31-07-2024")}});
 
 3. Find all the company drives and students who are appeared for the placement:
 
 db.company_drives.find().forEach(function(value){
-    console.log("Company Name : "+value.company_name)
-    console.log("Students Appeared : "+value.students_appeared)
+    console.log("Company_Name : "+value.company_name)
+    console.log("Students_Appeared : "+value.students_appeared)
 });
 
 4. Find the number of problems solved by the user in codekata:
 
 db.codekata.find().forEach(function(value){
     console.log("Name : "+value.user_name);
-    console.log("Problems Solved : "+value.problems_solved)
+    console.log("Problems_Solved : "+value.problems_solved)
 });
 
 5. Find all the mentors with who has the mentors count more than 15:
 
-db.mentors.find({mentors_count:{$gt:15}});
+db.mentors.find({mentor_count:{$gt:15}});
 
 6. Find the number of users who are absent and task is not submitted between 15-oct-2020 and 31-oct-2020:
 
-db.tasks.find({date:{$gt:new Date("2020-10-15"),$lt:new Date("2020-10-31")}}).forEach(function(value){
+db.tasks.find({date:{$gt:new Date("15-07-2024"),$lt:new Date("31-07-2024")}}).forEach(function(value){
     console.log("Name : "+value.user_name)
     console.log("Attendance :"+value.attendance)
-    console.log("Task : "+value.task_submission)
+    console.log("Tasks : "+value.task_submission)
 });
