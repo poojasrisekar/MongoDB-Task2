@@ -1,3 +1,4 @@
+db.codekata.insertMany(
 [{
     user_name:"oviya",
     problems_solved:88
@@ -26,3 +27,4 @@
     user_name:"abi",
     problems_solved:11,
 }]
+);
