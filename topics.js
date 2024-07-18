@@ -1,0 +1,32 @@
+db.topics.insertMany(
+[{
+    topic:"javascript_Day1",
+    month:"may",
+    task:"functions"
+},
+{
+    topic:"javascript_Day2",
+    month:"may",
+    task:"for loops"
+},
+{
+    topic:"javascript_Day3",
+    month:"may",
+    task:"Oops"
+},
+{
+    topic:"html_Day1",
+    month:"june",
+    task:"blog about html"
+},
+{
+    topic:"html_Day2",
+    month:"june",
+    task:"elements/tags"
+},
+{
+    topic:"html_Day3",
+    month:"june",
+    task:"inputs"
+}]
+  );
