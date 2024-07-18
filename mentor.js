@@ -1,0 +1,26 @@
+db.mentor.insertMany(
+[{
+    mentor_name:"A",
+    mentor_count:35
+},
+{
+    mentor_name:"B",
+    mentor_count:14
+},
+{
+    mentor_name:"C",
+    mentor_count:11
+},
+{
+    mentor_name:"D",
+    mentor_count:9
+},
+{
+    mentor_name:"E",
+    mentor_count:44
+},
+{
+    mentor_name:"F",
+    mentor_count:29
+}]
+);
